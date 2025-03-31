@@ -1,0 +1,25 @@
+﻿빌드 시작: 2015-01-13 오후 2:21:30
+     1>2 노드의 "C:\Users\sskang\Desktop\MYSW-KMA\KLT2010-TestVersion\Project\EXEcnnExtract\EXEcnoun.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\API\kma\src\coran-cnoun2.c"
+         coran-cnoun2.c
+     1>..\..\API\kma\src\coran-cnoun2.c(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>..\..\API\kma\src\coran-cnoun2.c(57): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>..\..\API\kma\src\coran-cnoun2.c(59): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>..\..\API\kma\src\coran-cnoun2.c(63): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>..\..\API\kma\src\coran-cnoun2.c(257): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(C:\Users\sskang\Desktop\MYSW-KMA\KLT2010-TestVersion\Project\EXEcnnExtract\.\Release\EXEcnoun.exe) does not match the Linker's OutputFile property value (C:\Users\sskang\Desktop\MYSW-KMA\KLT2010-TestVersion\EXE\getcnoun.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(EXEcnoun) does not match the Linker's OutputFile property value (getcnoun). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../EXE/getcnoun.exe" /INCREMENTAL:NO /NOLOGO "../../EXE/KLT2000-TEST.lib" odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release\EXEcnoun.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\EXEcnoun.lib" /MACHINE:X86 /SAFESEH ".\Release\coran-cnoun2.obj"
+         EXEcnoun.vcxproj -> C:\Users\sskang\Desktop\MYSW-KMA\KLT2010-TestVersion\Project\EXEcnnExtract\.\Release\EXEcnoun.exe
+     1>"C:\Users\sskang\Desktop\MYSW-KMA\KLT2010-TestVersion\Project\EXEcnnExtract\EXEcnoun.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.59
