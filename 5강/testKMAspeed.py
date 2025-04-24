@@ -23,7 +23,6 @@ def test_KLT(text):
 
 		for aLine in text:
 				kmaresult = klt.nouns(aLine.strip())
-				#print(kmaresult)
 				for r in kmaresult:
 						f.write(r+'\n')
 		f.close()
