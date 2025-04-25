@@ -96,14 +96,6 @@ def read():
     return input_file(input_path)
 
 
-# def top_words_in_dict(word_list, dictionary, top_n: int = 100):
-#     dict_set = set(dictionary)
-#     filtered = [word for word in word_list if word in dict_set]
-#
-#     counter = Counter(filtered)
-#     return counter.most_common(top_n)
-
-
 def init_dict():
     def dict_file(filename):
         emo_dict = {}
