@@ -1,3 +1,4 @@
+word	label
 쾌감	기쁨
 기쁨	기쁨
 환희	기쁨
@@ -15,8 +16,8 @@
 만족감	기쁨
 희희낙락	기쁨
 희열	기쁨
-불쾌감	기쁨, 혐오
-신바람	기쁨, 희망
+불쾌감	혐오
+신바람	기쁨
 놀람	놀람
 놀라움	놀람
 경악	놀람
@@ -588,13 +589,3 @@
 정한	기타
 분기	기타
 속병	기타
-
-****** chatGPT ******
-1. Use a Korean Sentiment Lexicon (감성 사전)
-Here are some public or research-grade sentiment dictionaries:
-
-이름	설명	링크
-KOSAC	서울대 감성사전. 감성극성(positive/negative) + 감성범주 제공	🔗 GitHub (KOSAC) (check SentiWords.txt)
-NIADic	Naver + KAIST 제작. 뉴스 댓글 기반, 감성 polarity	🔗 Korpora NIADic
-POLARITY-Lexicon	감성 극성 + intensity	일부 연구 논문 및 GitHub에서 구할 수 있음
-EmoLex-KO (translated from NRC)	영어 NRC Emotion Lexicon의 한국어 번역본	🔗 Original NRC (use translation)

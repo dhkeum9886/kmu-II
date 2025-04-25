@@ -12,11 +12,20 @@ from sklearn.model_selection import train_test_split
 import torch
 
 # 3. Load and Prepare Data (adjust path or upload CSV to Colab)
-data = pd.read_csv("465-EmoNouns_Kcbert.txt", sep="\t")  # Requires 'word', 'label' columns
+data = pd.read_csv("[2]590_emotional_nouns_categorized-sort.txt", sep="\t")  # Requires
 label_list = ['기쁨', '슬픔', '분노', '불안', '혐오', '사랑', '놀람', '희망']
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for label, i in label2id.items()}
 data['labels'] = data['label'].map(label2id)  # This is the correct column for HuggingFace
+
+# 3.2 매핑되지 않은(=NaN) 행 제거
+before = len(data)
+data = data.dropna(subset=['labels'])
+after  = len(data)
+print(f">>> dropped {before-after} rows with unmapped labels.")
+
+# 3.3 정수형으로 안전하게 캐스팅
+data['labels'] = data['labels'].astype('int64')
 
 # 4. Train-Test Split
 df_train, df_val = train_test_split(data, test_size=0.1, random_state=42)
@@ -26,7 +35,8 @@ val_dataset = Dataset.from_pandas(df_val[['word', 'labels']])
 # 5. Tokenizer and Model
 model_name = "beomi/kcbert-base"
 tokenizer = BertTokenizerFast.from_pretrained(model_name)
-model = BertForSequenceClassification.from_pretrained(model_name, num_labels=8)
+model = BertForSequenceClassification.from_pretrained(model_name, num_labels=len(label_list))
+model.config.problem_type = "single_label_classification"
 
 def tokenize(batch):
     return tokenizer(batch['word'], padding=True, truncation=True, max_length=16)

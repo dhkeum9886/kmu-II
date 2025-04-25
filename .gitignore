@@ -1,2 +1,4 @@
 .idea/
 .venv/
+/중간프로젝트/emoNouns_classify/emotion_model_dict_based/
+/중간프로젝트/emoNouns_classify/kcbert-emotion/model.safetensors
